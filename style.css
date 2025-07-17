@@ -48,7 +48,7 @@
         vertical-align: middle;
     }
 
-    .kontakt {
+    .contact {
         width: 24px;
         height: 24px;
         margin-left: 2px;
@@ -61,7 +61,7 @@
         margin-left: 2px;
     }
     
-    .impressum {
+    .imprint {
         width: 24px;
         height: 24px;
         margin-left: 2px;
@@ -90,6 +90,13 @@
     .navigation a:hover img {
         filter: brightness(0.8);
     }
+    .navigation a:hover .insta-icon,
+    .navigation a:hover .coins,
+    .navigation a:hover .contact,
+    .navigation a:hover .home-icon,
+    .navigation a:hover .imprint {
+        filter: brightness(0.8);
+    }
 
     .desktop-top {
     
@@ -111,7 +118,7 @@
 html {
         scroll-behavior: smooth;
     }
-.Angebotbtn:hover {
+.angebotbtn:hover {
     background: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%) right;
     background-size: 200% auto;
     background-position: right center;
