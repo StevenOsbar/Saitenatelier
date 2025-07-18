@@ -77,10 +77,10 @@
 
 
     .logo {
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+        width: 200px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
     }
     .toplogo {
         width: 200px;   
@@ -98,31 +98,69 @@
         filter: brightness(0.8);
     }
 
-    .desktop-top {
-    
-       text-align: end;
+    .desktop-top-parent,
+    .desktop-bottom-parent,
+    .desktop-bundles-parent {
         display: flex;
-        justify-content: space-evenly;
-        gap: 50px;
+        gap: 1rem;
+        flex-wrap: wrap;
     }
 
-    .desktop-bottom {
-        text-align: end;
-        display: flex;
-        justify-content: space-evenly;
-        gap: 50px;
-        }
+    .desktop-top-child-1,
+    .desktop-top-child-2,
+    .desktop-bottom-child-1,
+    .desktop-bottom-child-2 {
+        flex: 1 1 auto;
+        min-width: 300px;
+        box-sizing:content-box;
+        padding: 1rem;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .desktop-bundles-child-1,
+    .desktop-bundles-child-2 {
+        flex: 1 1 100%;
+        min-width: 300px;
+        padding: 1rem;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
 
+    .desktop-top-child-1 h2,
+    .desktop-top-child-2 h2,
+    .desktop-bottom-child-1 h2,
+    .desktop-bottom-child-2 h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
 
-
-html {
+    html {
         scroll-behavior: smooth;
     }
-.angebotbtn:hover {
-    background: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%) right;
-    background-size: 200% auto;
-    background-position: right center;
-    transition: background 0.6s ease;
-    color: #fff;
-    text-decoration: none;
-}
+
+    .angebotbtn:hover {
+        background: linear-gradient(to right, #2b5876 0%, #4e4376  51%, #2b5876  100%) right;
+        background-size: 200% auto;
+        background-position: right center;
+        transition: background 0.6s ease;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .header-prices-parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .header-prices-child-1,
+    .header-prices-child-2 {
+           flex: 1 1 100%;
+        min-width: 300px;
+        padding: 1rem;
+        border-radius: 5px;
+    }
